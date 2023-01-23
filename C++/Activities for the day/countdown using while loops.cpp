@@ -1,10 +1,10 @@
 #include<iostream>
-# include <unistd.h>
+#include <unistd.h>
 using namespace std;
 
 int main(){
     int countdownLength;
-    cout << " How long would you like the countdown to go for?: ";
+    cout << "How long would you like the countdown to go for?: ";
     cin >> countdownLength;
     int countdown = 0;
     int i = countdownLength;
