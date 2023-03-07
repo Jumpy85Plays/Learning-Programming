@@ -11,11 +11,12 @@ while True:
     else:
         if grade <= max_grade:
             grade_sum += grade
-            average_grade = grade_sum/grade_counter
             grade_list.append(grade)
             grade_counter +=1
         else:
             print("Invalid grade, Please try again.")
+            
+average_grade = grade_sum/grade_counter
 
 print(grade_sum)
 print(average_grade)
