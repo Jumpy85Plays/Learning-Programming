@@ -31,7 +31,7 @@ int main() {
   one->next = two;
   two->next = three;
   three->next = four;
-  four->next = NULL;
+  four->next = one;
 
   // print the linked list value
   head = one;

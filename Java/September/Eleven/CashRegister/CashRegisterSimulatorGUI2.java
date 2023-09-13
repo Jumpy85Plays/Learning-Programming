@@ -1,8 +1,9 @@
 package Java.September.Eleven.CashRegister;
 
 import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
 
-public class CashRegisterSimulatorGUI {
+public class CashRegisterSimulatorGUI2 {
     public static void main(String[] args) {
         CashRegister register = new CashRegister();
 
@@ -33,8 +34,22 @@ public class CashRegisterSimulatorGUI {
         // Calculate the change
         double change = register.giveChange();
 
-        // Display the change to the user using a GUI dialog
-        JOptionPane.showMessageDialog(null, "Your change is: $" + change);
+        // Format the change to two decimal places
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        String formattedChange = decimalFormat.format(change);
+
+        // Create a summary message
+        String summaryMessage = "Item Price: $" + price + "\n" +
+                "Payment Details: \n" +
+                "Dollars: " + dollars + "\n" +
+                "Quarters: " + quarters + "\n" +
+                "Dimes: " + dimes + "\n" +
+                "Nickels: " + nickels + "\n" +
+                "Pennies: " + pennies + "\n" +
+                "Your change is: $" + formattedChange;
+
+        // Display the summary to the user using a GUI dialog
+        JOptionPane.showMessageDialog(null, summaryMessage);
 
         // Exit the program gracefully
         System.exit(0);
