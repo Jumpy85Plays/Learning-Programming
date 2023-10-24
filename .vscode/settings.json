@@ -48,5 +48,6 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    "python.analysis.typeCheckingMode": "off"
+    "python.analysis.typeCheckingMode": "off",
+    "C_Cpp.errorSquiggles": "disabled"
 }

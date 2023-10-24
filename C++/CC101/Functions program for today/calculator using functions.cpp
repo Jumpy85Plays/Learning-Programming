@@ -1,4 +1,3 @@
-
 #include<iostream>
 using namespace std;
 
@@ -21,7 +20,7 @@ int main(){
 		cin >> num2;
         switch (op)
         {
-        case '+':
+        case '+': 
             additionFunction(num1, num2);
             break;
         case '-':
