@@ -1,0 +1,22 @@
+body {
+    background-color: #67a8e9;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3.font-weight-bold {
+    color: rgb(100, 100, 230); /* Add this rule to make the text blue */
+}
+
+#summary {
+    display: none;
+}
+
+#summary p {
+    font-weight: bold;
+}

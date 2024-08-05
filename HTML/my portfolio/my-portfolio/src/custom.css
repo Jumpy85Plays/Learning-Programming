@@ -1,0 +1,77 @@
+body {
+    background-color: #f7f7f7;
+    color: #292b2c;
+  }
+  
+  h2 {
+    color: #5bc0de;
+  }
+  
+  .card-title {
+    color: #5cb85c;
+  }
+  
+  .card-text {
+    color: #292b2c;
+  }
+  
+  .btn-primary {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+  }
+  
+  .btn-primary:hover {
+    background-color: #31b0d5;
+    border-color: #269abc;
+  }
+  
+  footer {
+    background-color: #292b2c;
+    color: #f7f7f7;
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: #f7f7f7 !important;
+  }
+  .modal-content {
+    background-color: #f7f7f7;
+    color: #292b2c;
+  }
+  
+  .modal-header {
+    background-color: #5bc0de;
+    color: #f7f7f7;
+  }
+  
+  .modal-footer .btn-secondary {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+  }
+  
+  .modal-footer .btn-primary {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+  }
+
+  img.img-fluid.rounded-circle {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Custom.css */
+
+body {
+  padding-top: 56px; /* Adjust based on the height of your navbar */
+}
+
+.navbar {
+  background-color: #2b8edf; /* Example background color */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; /* Text color for nav links */
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff; /* Text color for the brand */
+}

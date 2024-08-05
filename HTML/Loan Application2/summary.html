@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Summary</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #E0FFFF; /* Cyan/light blue color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Summary of Your Inputs</h2>
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="summaryTableBody">
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+        <div class="mt-4 text-left">
+            <button class="btn btn-primary" onclick="window.history.back()">Back</button>
+        </div>
+    </div>
+
+    <script>
+        function getQueryParams() {
+            let params = {};
+            window.location.search.substring(1).split("&").forEach(function(pair) {
+                let [key, value] = pair.split("=");
+                params[decodeURIComponent(key)] = decodeURIComponent(value);
+            });
+            return params;
+        }
+
+        function displaySummary() {
+            let params = getQueryParams();
+            let tableBody = document.getElementById('summaryTableBody');
+
+            for (let key in params) {
+                if (params.hasOwnProperty(key)) {
+                    let row = document.createElement('tr');
+                    let cell1 = document.createElement('td');
+                    let cell2 = document.createElement('td');
+
+                    cell1.textContent = formatKey(key);
+                    cell2.textContent = params[key];
+
+                    row.appendChild(cell1);
+                    row.appendChild(cell2);
+                    tableBody.appendChild(row);
+                }
+            }
+        }
+
+        function formatKey(key) {
+            // Format the key for better readability
+            return key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+        }
+
+        window.onload = displaySummary;
+    </script>
+</body>
+</html>
