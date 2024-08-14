@@ -1,0 +1,20 @@
+$theme-colors: (
+  "primary": #5bc0de,
+  "secondary": #e9ecef,
+  "success": #5cb85c,
+  "info": #5bc0de,
+  "warning": #f0ad4e,
+  "danger": #d9534f,
+  "light": #f7f7f7,
+  "dark": #292b2c
+);
+
+$body-bg: #f7f7f7;
+$body-color: #292b2c;
+
+@import '~bootstrap/scss/bootstrap';
+
+img.img-fluid.rounded-circle {
+  max-width: 100%;
+  height: auto;
+}

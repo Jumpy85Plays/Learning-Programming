@@ -1,0 +1,26 @@
+/* src/styles/Home.css */
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 56px; /* Offset for the fixed navbar */
+  }
+  /* Home.css */
+
+.personal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}

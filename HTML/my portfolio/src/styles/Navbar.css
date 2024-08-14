@@ -1,0 +1,15 @@
+/* Navbar.css */
+
+.navbar-custom {
+    background-color: #1e76ce; /* Dark background color */
+  }
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: #ffffff; /* Light text color */
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #adb5bd; /* Slightly lighter color on hover */
+  }
+  

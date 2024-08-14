@@ -1,0 +1,120 @@
+/* Root Color Variable */
+:root {
+  --text-color: rgb(0, 0, 0);
+}
+
+/* Base Styles */
+body {
+  padding-top: 56px; /* Adjust based on the height of your navbar */
+  background-color: #f0f0f0;
+  color: var(--text-color);
+}
+
+/* Text Colors */
+h2 {
+  color: #5bc0de;
+}
+
+.card-title {
+  color: #5cb85c;
+}
+
+.card-text {
+  color: #292b2c;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+.btn-primary:hover {
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #292b2c;
+  color: #f7f7f7;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #2b8edf;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+}
+
+/* Modal Styles */
+.modal-content {
+  background-color: #f7f7f7;
+  color: #292b2c;
+}
+
+.modal-header {
+  background-color: #5bc0de;
+  color: #f7f7f7;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.modal-footer .btn-primary {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+/* Image Styles */
+img.img-fluid.rounded-circle {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text and Input Styles */
+body, h1, h2, h3, h4, h5, h6, p, span, li, a, label, button {
+  color: var(--text-color);
+}
+
+input, textarea, .form-control {
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero and Contact Form Styles */
+.hero-text, .hero-subtext, .navbar-brand, .btn-primary, .contact-title, .contact-form input, .contact-form textarea {
+  color: var(--text-color);
+}
+
+/* Custom Sliding Animation */
+.slide-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+}
+
+.slide-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .picture {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            text-align: center;
+            line-height: 200px;
+            font-size: 14px;
+            color: #666;
+        }
+        .section-header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 150px;
+            margin-bottom: 10px;
+            clear: both;
+        }
+        .section {
+            margin-bottom: 20px;
+            clear: both;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px; /* Adjusted to create space between sections */
+        }
+        table td {
+            padding: 5px;
+        }
+        input[type="text"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .signature {
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">BIO-DATA</h2>
+
+        <div class="picture">Your Photo</div> <!-- Placeholder for the picture -->
+
+        <div class="section">
+            <div class="section-header">PERSONAL DATA</div>
+            <table>
+                <tr>
+                    <td>Position Desired:</td>
+                    <td><input type="text" name="position_desired"></td>
+                    <td>Date:</td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name"></td>
+                    <td>Gender:</td>
+                    <td><input type="text" name="gender"></td>
+                </tr>
+                <tr>
+                    <td>City Address:</td>
+                    <td colspan="3"><input type="text" name="city_address"></td>
+                </tr>
+                <tr>
+                    <td>Provincial Address:</td>
+                    <td colspan="3"><input type="text" name="provincial_address"></td>
+                </tr>
+                <tr>
+                    <td>Telephone:</td>
+                    <td><input type="text" name="telephone"></td>
+                    <td>Cellphone:</td>
+                    <td><input type="text" name="cellphone"></td>
+                </tr>
+                <tr>
+                    <td>Email Address:</td>
+                    <td colspan="3"><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob"></td>
+                    <td>Birthplace:</td>
+                    <td><input type="text" name="birthplace"></td>
+                </tr>
+                <tr>
+                    <td>Civil Status:</td>
+                    <td><input type="text" name="civil_status"></td>
+                    <td>Citizenship:</td>
+                    <td><input type="text" name="citizenship"></td>
+                </tr>
+                <tr>
+                    <td>Height:</td>
+                    <td><input type="text" name="height"></td>
+                    <td>Weight:</td>
+                    <td><input type="text" name="weight"></td>
+                </tr>
+                <tr>
+                    <td>Religion:</td>
+                    <td colspan="3"><input type="text" name="religion"></td>
+                </tr>
+                <tr>
+                    <td>Spouse:</td>
+                    <td><input type="text" name="spouse"></td>
+                    <td>Occupation:</td>
+                    <td><input type="text" name="spouse_occupation"></td>
+                </tr>
+                <tr>
+                    <td>Name of Children:</td>
+                    <td colspan="3"><textarea name="children" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Father's Name:</td>
+                    <td><input type="text" name="father_name"></td>
+                    <td>Occupation:</td>
+                    <td><input type="text" name="father_occupation"></td>
+                </tr>
+                <tr>
+                    <td>Mother's Name:</td>
+                    <td><input type="text" name="mother_name"></td>
+                    <td>Occupation:</td>
+                    <td><input type="text" name="mother_occupation"></td>
+                </tr>
+                <tr>
+                    <td>Language/Dialect Spoken and Written:</td>
+                    <td colspan="3"><input type="text" name="language"></td>
+                </tr>
+                <tr>
+                    <td>Person to be contacted in case of emergency:</td>
+                    <td colspan="3"><input type="text" name="emergency_contact"></td>
+                </tr>
+                <tr>
+                    <td>His or her address and telephone:</td>
+                    <td colspan="3"><input type="text" name="emergency_contact_address"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">EDUCATIONAL BACKGROUND</div>
+            <table>
+                <tr>
+                    <td>Elementary:</td>
+                    <td><input type="text" name="elementary_school"></td>
+                    <td>Year Graduated:</td>
+                    <td><input type="text" name="elementary_year"></td>
+                </tr>
+                <tr>
+                    <td>High School:</td>
+                    <td><input type="text" name="highschool"></td>
+                    <td>Year Graduated:</td>
+                    <td><input type="text" name="highschool_year"></td>
+                </tr>
+                <tr>
+                    <td>College:</td>
+                    <td><input type="text" name="college"></td>
+                    <td>Year Graduated:</td>
+                    <td><input type="text" name="college_year"></td>
+                </tr>
+                <tr>
+                    <td>Degree Received:</td>
+                    <td colspan="3"><input type="text" name="degree"></td>
+                </tr>
+                <tr>
+                    <td>Special Skills:</td>
+                    <td colspan="3"><textarea name="skills" rows="2"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">EMPLOYMENT RECORD</div>
+            <table>
+                <tr>
+                    <td>Company Name:</td>
+                    <td colspan="3"><input type="text" name="company1"></td>
+                </tr>
+                <tr>
+                    <td>Position:</td>
+                    <td><input type="text" name="position1"></td>
+                    <td>From:</td>
+                    <td><input type="date" name="from1"></td>
+                    <td>To:</td>
+                    <td><input type="date" name="to1"></td>
+                </tr>
+                <tr>
+                    <td>Company Name:</td>
+                    <td colspan="3"><input type="text" name="company2"></td>
+                </tr>
+                <tr>
+                    <td>Position:</td>
+                    <td><input type="text" name="position2"></td>
+                    <td>From:</td>
+                    <td><input type="date" name="from2"></td>
+                    <td>To:</td>
+                    <td><input type="date" name="to2"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">CHARACTER REFERENCE</div>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="reference_name1"></td>
+                    <td>Company:</td>
+                    <td><input type="text" name="reference_company1"></td>
+                    <td>Contact No.:</td>
+                    <td><input type="text" name="reference_contact1"></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="reference_name2"></td>
+                    <td>Company:</td>
+                    <td><input type="text" name="reference_company2"></td>
+                    <td>Contact No.:</td>
+                    <td><input type="text" name="reference_contact2"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <table>
+                <tr>
+                    <td>Res. Cert. No.:</td>
+                    <td><input type="text" name="res_cert_no"></td>
+                    <td>Issued at:</td>
+                    <td><input type="text" name="issued_at"></td>
+                </tr>
+                <tr>
+                    <td>Issued on:</td>
+                    <td><input type="date" name="issued_on"></td>
+                </tr>
+                <tr>
+                    <td>SSS:</td>
+                    <td><input type="text" name="sss"></td>
+                    <td>TIN:</td>
+                    <td><input type="text" name="tin"></td>
+                </tr>
+                <tr>
+                    <td>NBI No.:</td>
+                    <td><input type="text" name="nbi_no"></td>
+                    <td>Passport No.:</td>
+                    <td><input type="text" name="passport_no"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="signature">
+            <p>Applicant's Signature: ____________________________</p>
+        </div>
+    </div>
+</body>
+</html>

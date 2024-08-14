@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    .input-with-label input:focus::placeholder {
+        color: transparent;
+    }
+
+    .car-options {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" placeholder="Enter your First Name Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your First Name Here'"><br>
+    Last name:<br>
+    <input type="text" name="lastname" placeholder="Enter your Last Name Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your Last Name Here'"><br><br>
+    
+    Gender:<br>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+    
+    Select your favorite color:<br>
+  <input type="color" name="favcolor" >
+  <br><br>
+  
+  Enter a date before 1980-01-01:<br>
+<input type="date" name="bday" max="1979-12-31"><br><br>
+Enter a date after 2000-01-01:<br>
+<input type="date" name="bday" min="2000-01-02"><br><br>
+
+    Vehicle:<br>
+    <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="vehicle" value="Car" id="car-checkbox"> I have a car<br><br>
+    
+    <div class="car-options">
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    
+    <input type="submit" value="Submit">
+</form>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<form>
+  <fieldset>
+    <legend>Personal Data
+    </legend>Name: <input type="text" size="30"><br>
+    Email: <input type="text" size="30"><br>
+    Date of birth: <input type="text" size="10">
+  </fieldset>
+</form>
+
+<script>
+    const carCheckbox = document.getElementById('car-checkbox');
+    const carOptions = document.querySelector('.car-options');
+
+    carCheckbox.addEventListener('change', function() {
+        carOptions.style.display = this.checked ? 'block' : 'none';
+    });
+</script>
+</body>
+</html>
