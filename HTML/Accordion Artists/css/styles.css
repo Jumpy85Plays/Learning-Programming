@@ -1,0 +1,72 @@
+body {
+    background: url('https://i.pinimg.com/originals/fd/41/f9/fd41f91f5edd2d595ae4431af1e4ebbf.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+body {
+    background: url('https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/08/theworldscontinuation_musicvideothumbnail.jpg?resize=696%2C392&ssl=1') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.artist-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.artist-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.artist-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-card .card-body .card-title {
+    flex-grow: 0;
+}
+
+.artist-card .card-body .card-text {
+    flex-grow: 1;
+}
+
+.artist-card .card-body .btn {
+    flex-grow: 0;
+}
+
+.artist-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+table.table-dark {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+table.table-dark a {
+    color: #007bff;
+}
+
+table.table-dark a:hover {
+    text-decoration: underline;
+}
+
+.artist-image {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
